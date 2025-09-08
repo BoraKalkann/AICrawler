@@ -1,4 +1,3 @@
-
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -24,3 +23,28 @@ coverage/
 .env
 .env.local
 .env.production
+Scripts/
+Lib/
+Include/
+pyvenv.cfg
+pip-selfcheck.json
+
+# Tüm pyc dosyaları
+*.pyc
+
+# Tüm pycache klasörleri
+**/__pycache__/
+*/__pycache__/
+__pycache__
+
+# Log ve temp dosyalar
+*.log
+*.tmp
+
+# Venv variations
+venv/
+.venv/
+env/
+.env/
+ENV/
+virtualenv/
