@@ -8,7 +8,7 @@ class ContentCleaner:
     def __init__(self):
         load_dotenv()
         genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-        self.model = genai.GenerativeModel("gemini-1.5-flash")
+        self.model = genai.GenerativeModel("gemini-2.0-flash")
     
     def clean_node(self, state: PipelineState):
         soup = BeautifulSoup(state["raw_data"]["html"], "html.parser")
