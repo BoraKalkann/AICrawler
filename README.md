@@ -1,4 +1,4 @@
-# AI Web Crawler
+# 🤖 AI Web Crawler
 
 > **Yapay zeka destekli akıllı web tarama ve analiz platformu**
 
@@ -7,29 +7,29 @@
 [![LangGraph](https://img.shields.io/badge/LangGraph-Latest-green.svg)](https://langchain.com)
 [![Gemini](https://img.shields.io/badge/Google_Gemini-2.0--flash-orange.svg)](https://ai.google.dev)
 
-##  Özellikler
+## 🚀 Özellikler
 
-###  **Akıllı Web Tarama**
+### 🎯 **Akıllı Web Tarama**
 - **Çoklu Derinlik Tarama**: Ana sayfa ve alt sayfaları otomatik keşfetme
 - **Özelleştirilebilir Parametreler**: Link sayısı ve tarama derinliği kontrolü
 - **Hata Toleranslı**: Başarısız sayfaları atlayıp taramaya devam etme
 
-###  **AI-Powered İçerik İşleme**
+### 🧠 **AI-Powered İçerik İşleme**
 - **Google Gemini 2.0 Entegrasyonu**: Son teknoloji AI ile içerik analizi
 - **Akıllı İçerik Temizleme**: Gereksiz HTML elementlerini otomatik filtreleme
 - **Yapılandırılmış Veri Çıkarma**: Ana makale içeriğini hassas şekilde ayıklama
 
-###  **Interaktif AI Asistan**
+### 💬 **Interaktif AI Asistan**
 - **Bağlamsal Sohbet**: Taranan içerikler hakkında akıllı sorular sorma
 - **Gerçek Zamanlı Analiz**: Anlık içerik analizi ve özetleme
 - **Türkçe Destek**: Tam Türkçe dil desteği
 
-### **Veri Yönetimi**
+### 📊 **Veri Yönetimi**
 - **Çoklu Format Desteği**: JSON ve PDF export seçenekleri
 - **Detaylı İstatistikler**: Karakter, kelime sayısı ve başarı oranları
 - **İndirilebilir Raporlar**: Taranan verileri kolayca kaydetme
 
-###  **Modern UI/UX**
+### 🎨 **Modern UI/UX**
 - **Gradient Tasarım**: Modern ve görsel olarak çekici arayüz
 - **Responsive Layout**: Mobil ve masaüstü uyumlu
 - **Real-time Feedback**: Anlık ilerleme göstergeleri
@@ -49,9 +49,9 @@ graph TD
     I --> F
 ```
 
-###  Proje Yapısı
+### 📁 Proje Yapısı
 ```
- ai-webcrawler/
+📦 ai-webcrawler/
 ├── 📄 crawler.py          # Ana crawler sınıfı
 ├── 📄 stream_app.py       # Streamlit uygulaması
 ├── 📂 pipeline/
@@ -67,7 +67,7 @@ graph TD
 
 ## ⚡ Hızlı Başlangıç
 
-### 1️⃣ Kurulum
+### 1 Kurulum
 
 ```bash
 # Repository'yi klonlayın
@@ -82,7 +82,7 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 2️⃣ API Anahtarı Yapılandırması
+### 2️ API Anahtarı Yapılandırması
 
 `.env` dosyası oluşturun:
 
@@ -92,36 +92,102 @@ GEMINI_API_KEY=your_gemini_api_key_here
 
 > 🔑 **API Anahtarı Alma**: [Google AI Studio](https://makersuite.google.com/app/apikey)'dan ücretsiz Gemini API anahtarı alabilirsiniz.
 
-### 3️⃣ Uygulamayı Çalıştırın
+### 3️ Uygulamayı Çalıştırın
 
 ```bash
 streamlit run stream_app.py
 ```
 
-🎉 **Tebrikler!** Uygulama `http://localhost:8501` adresinde çalışıyor.
 
-## 🎮 Kullanım Rehberi
+##  Adım Adım Kullanım Rehberi
 
-### **Web Sitesi Tarama**
+### **1️⃣ Kontrol Paneli - URL ve Ayarlar**
 
-1. **URL Girişi**: Sol panelden taramak istediğiniz web sitesi adresini girin
-2. **Parametreleri Ayarlayın**:
-   - **Derinlik**: `0` (sadece ana sayfa) - `5` (5 seviye alt sayfa)
-   - **Link Sayısı**: Her seviyeden kaç link takip edileceği (1-10)
-3. **Format Seçin**: JSON (yapılandırılmış) veya PDF (okunabilir)
-4. **Tarama Başlatın**: "🚀 Tarama Başlat" butonuna tıklayın
+![Kontrol Paneli](screenshots/control-panel.png)
 
-### **AI Asistan Kullanımı**
+- **Web Sitesi URL'si** kutusuna taramak istediğiniz adresi girin
+- Örnek: `https://www.bbc.com/news/articles/ce3yj41083no`
 
-Tarama tamamlandıktan sonra sağ panelden:
+### **2️⃣ Tarama Parametrelerini Ayarlayın**
 
+![Parametreler](screenshots/parameters.png)
+
+#### **Derinlik Ayarı:**
+- **0**: Sadece girilen ana sayfa taranır
+- **1-5**: Alt sayfa linklerini de takip eder (her seviye için)
+
+#### **Link Sayısı:**
+- Her sayfadan kaç adet link takip edileceğini belirler (1-10 arası)
+- Daha fazla link = Daha kapsamlı tarama
+
+#### **İndirme Formatı:**
+- **JSON**: Yapılandırılmış veri formatı (geliştiriciler için ideal)
+- **PDF**: Okunabilir belge formatı (genel kullanım için)
+
+### **3️⃣ Tarama Başlatma**
+
+![Ana Sayfa](screenshots/main-page.png)
+
+- **"🚀 Tarama Başlat"** butonuna tıklayın
+- Uygulama web sitesini otomatik olarak analiz etmeye başlar
+- İlerleme durumu ekranda görüntülenir
+
+### **4️⃣ AI Asistan ile Etkileşim**
+
+![AI Asistan](screenshots/ai-assistant.png)
+
+Tarama tamamlandıktan sonra:
+
+1. **Soru Girin**: "Sorunuz:" kutusuna istediğiniz soruyu yazın
+2. **Gönder**: "Gönder" butonuna tıklayın
+3. **AI Yanıtı**: Asistan sadece taranan içerikler hakkında bilgi verir
+
+#### **Örnek Soru Türleri:**
 ```
-💡 Örnek Sorular:
-• "Bu metinde hangi ana konular var?"
-• "En önemli bilgiler nelerdir?"
-• "Bu sayfa ne hakkında?"
-• "Önemli istatistikler var mı?"
+🔍 "Konuyu özetler misin?"
+📊 "Bu metinde hangi konular var?"
+🎯 "En önemli bilgiler nelerdir?"
+📰 "Bu haber ne hakkında?"
+💡 "Önemli detaylar var mı?"
 ```
+
+### **5️⃣ Sonuçları İnceleme**
+
+![Sonuçlar](screenshots/results.png)
+
+Tarama tamamlandıktan sonra:
+
+#### ** İstatistikler Bölümü:**
+- **URL**: Taranan sayfa adresi
+- **İçerik**: Toplam karakter sayısı
+- **Derinlik**: Hangi seviyede tarandığı
+
+#### ** İçerik Görüntüleme:**
+- **JSON Format**: Yapılandırılmış veri görünümü
+- **Başlık ve İçerik**: Temizlenmiş metin halinde
+- **İndirme Butonu**: Sonuçları bilgisayarınıza kaydedin
+
+#### ** Veri İndirme:**
+- JSON dosyası olarak yapılandırılmış veri
+- Tarih ve saat damgalı dosya adı
+- Hemen kullanıma hazır format
+
+### ** Kullanım İpuçları**
+
+#### ** Performans Optimizasyonu:**
+- Küçük projeler için **Derinlik: 0-1** kullanın
+- Büyük siteler için **Link Sayısı: 3-5** ile başlayın
+- Test amaçlı önce tek sayfa deneyin
+
+#### ** En İyi Deneyim İçin:**
+- Güvenilir internet bağlantısı kullanın
+- Tarama sırasında sayfayı kapatmayın
+- Büyük siteler için sabırlı olun
+
+#### **Dikkat Edilecekler:**
+- AI Asistan sadece taranan içerik hakkında yanıt verir
+- Genel bilgi soruları için internet arama motoru kullanın
+- Telif hakkı korumalı içeriklere dikkat edin
 
 ## 🔧 Teknik Detaylar
 
@@ -139,17 +205,17 @@ Tarama tamamlandıktan sonra sağ panelden:
 
 ### **Özellik Detayları**
 
-#### 🔄 **StateGraph Pipeline**
+####  **StateGraph Pipeline**
 - **Modüler Yapı**: Her işlem ayrı node olarak tanımlanmış
 - **Hata Yönetimi**: Pipeline herhangi bir aşamada hata durumunda güvenli şekilde devam eder
 - **Durum Takibi**: Her aşamada veri durumu korunur ve takip edilir
 
-#### 🧠 **AI İçerik İşleme**
+####  **AI İçerik İşleme**
 - **Akıllı Temizleme**: Gemini AI navigasyon, reklam, footer gibi gereksiz içerikleri otomatik tespit eder
 - **Dil Koruma**: Orijinal içeriğin dilini koruyarak temizleme yapar
 - **Yapılandırma**: Dağınık içeriği düzenli başlık ve paragraf yapısına dönüştürür
 
-## 🚀 Gelişmiş Kullanım
+##  Gelişmiş Kullanım
 
 ### **Özelleştirme Seçenekleri**
 
@@ -180,16 +246,16 @@ state = {
 }
 ```
 
-## 🐛 Sorun Giderme
+##  Sorun Giderme
 
 ### **Yaygın Sorunlar ve Çözümler**
 
 | Sorun | Çözüm |
 |-------|-------|
 |  **API Anahtarı Hatası** | `.env` dosyasında `GEMINI_API_KEY` kontrolü |
-|  **URL Erişim Hatası** | URL formatı ve internet bağlantısı kontrolü |
-|  **UI Görünüm Sorunu** | Tarayıcı cache temizliği |
-|  **Yavaş Performans** | Link sayısı ve derinlik parametrelerini azaltın |
+| **URL Erişim Hatası** | URL formatı ve internet bağlantısı kontrolü |
+| **UI Görünüm Sorunu** | Tarayıcı cache temizliği |
+| **Yavaş Performans** | Link sayısı ve derinlik parametrelerini azaltın |
 
 ### **Debug Modu**
 
@@ -197,6 +263,9 @@ state = {
 # Detaylı log çıktısı için
 streamlit run stream_app.py --logger.level=debug
 ```
+
+
+
 ### **Geliştirme Ortamı**
 
 ```bash
@@ -209,3 +278,11 @@ pre-commit install
 # Testleri çalıştırın
 pytest tests/
 ```
+
+
+
+
+**Deepsis'ten Yunus Bey ve Rümeysa Hanım'a projede bana gösterdikleri yol ve emekleri için teşekkür ediyorum. **
+
+
+</div>
