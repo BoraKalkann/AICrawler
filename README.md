@@ -1,4 +1,4 @@
-# 🤖 AI Web Crawler
+#  AI Web Crawler
 
 > **Yapay zeka destekli akıllı web tarama ve analiz platformu**
 
@@ -7,29 +7,29 @@
 [![LangGraph](https://img.shields.io/badge/LangGraph-Latest-green.svg)](https://langchain.com)
 [![Gemini](https://img.shields.io/badge/Google_Gemini-2.0--flash-orange.svg)](https://ai.google.dev)
 
-## 🚀 Özellikler
+##  Özellikler
 
-### 🎯 **Akıllı Web Tarama**
+###  **Akıllı Web Tarama**
 - **Çoklu Derinlik Tarama**: Ana sayfa ve alt sayfaları otomatik keşfetme
 - **Özelleştirilebilir Parametreler**: Link sayısı ve tarama derinliği kontrolü
 - **Hata Toleranslı**: Başarısız sayfaları atlayıp taramaya devam etme
 
-### 🧠 **AI-Powered İçerik İşleme**
+###  **AI-Powered İçerik İşleme**
 - **Google Gemini 2.0 Entegrasyonu**: Son teknoloji AI ile içerik analizi
 - **Akıllı İçerik Temizleme**: Gereksiz HTML elementlerini otomatik filtreleme
 - **Yapılandırılmış Veri Çıkarma**: Ana makale içeriğini hassas şekilde ayıklama
 
-### 💬 **Interaktif AI Asistan**
+###  **Interaktif AI Asistan**
 - **Bağlamsal Sohbet**: Taranan içerikler hakkında akıllı sorular sorma
 - **Gerçek Zamanlı Analiz**: Anlık içerik analizi ve özetleme
 - **Türkçe Destek**: Tam Türkçe dil desteği
 
-### 📊 **Veri Yönetimi**
+###  **Veri Yönetimi**
 - **Çoklu Format Desteği**: JSON ve PDF export seçenekleri
 - **Detaylı İstatistikler**: Karakter, kelime sayısı ve başarı oranları
 - **İndirilebilir Raporlar**: Taranan verileri kolayca kaydetme
 
-### 🎨 **Modern UI/UX**
+### **Modern UI/UX**
 - **Gradient Tasarım**: Modern ve görsel olarak çekici arayüz
 - **Responsive Layout**: Mobil ve masaüstü uyumlu
 - **Real-time Feedback**: Anlık ilerleme göstergeleri
@@ -65,7 +65,7 @@ graph TD
 └── 📄 README.md          # Bu dosya
 ```
 
-## ⚡ Hızlı Başlangıç
+##  Hızlı Başlangıç
 
 ### 1 Kurulum
 
@@ -90,7 +90,7 @@ pip install -r requirements.txt
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-> 🔑 **API Anahtarı Alma**: [Google AI Studio](https://makersuite.google.com/app/apikey)'dan ücretsiz Gemini API anahtarı alabilirsiniz.
+> 🔑**API Anahtarı Alma**: [Google AI Studio](https://makersuite.google.com/app/apikey)'dan ücretsiz Gemini API anahtarı alabilirsiniz.
 
 ### 3️ Uygulamayı Çalıştırın
 
@@ -103,14 +103,14 @@ streamlit run stream_app.py
 
 ### **1️⃣ Kontrol Paneli - URL ve Ayarlar**
 
-![Kontrol Paneli](screenshots/control-panel.png)
+<img width="485" height="238" alt="control-panel png" src="https://github.com/user-attachments/assets/09a1e533-12cc-4af9-85cc-0d1a72ebd593" />
+
 
 - **Web Sitesi URL'si** kutusuna taramak istediğiniz adresi girin
 - Örnek: `https://www.bbc.com/news/articles/ce3yj41083no`
 
 ### **2️⃣ Tarama Parametrelerini Ayarlayın**
-
-![Parametreler](screenshots/parameters.png)
+<img width="473" height="240" alt="parameters png" src="https://github.com/user-attachments/assets/14f8f707-1342-4ac2-ba1e-3d414cce47e8" />
 
 #### **Derinlik Ayarı:**
 - **0**: Sadece girilen ana sayfa taranır
@@ -126,15 +126,15 @@ streamlit run stream_app.py
 
 ### **3️⃣ Tarama Başlatma**
 
-![Ana Sayfa](screenshots/main-page.png)
+<img width="1370" height="384" alt="main-page" src="https://github.com/user-attachments/assets/3e9c1abf-a3cf-4b86-be08-d1098fa56f1d" />
 
-- **"🚀 Tarama Başlat"** butonuna tıklayın
+- **"Tarama Başlat"** butonuna tıklayın
 - Uygulama web sitesini otomatik olarak analiz etmeye başlar
 - İlerleme durumu ekranda görüntülenir
 
 ### **4️⃣ AI Asistan ile Etkileşim**
 
-![AI Asistan](screenshots/ai-assistant.png)
+<img width="478" height="593" alt="ai-assistant png" src="https://github.com/user-attachments/assets/af3eb75b-daae-4c42-9867-260f47ab0635" />
 
 Tarama tamamlandıktan sonra:
 
@@ -144,16 +144,16 @@ Tarama tamamlandıktan sonra:
 
 #### **Örnek Soru Türleri:**
 ```
-🔍 "Konuyu özetler misin?"
-📊 "Bu metinde hangi konular var?"
-🎯 "En önemli bilgiler nelerdir?"
-📰 "Bu haber ne hakkında?"
-💡 "Önemli detaylar var mı?"
+ "Konuyu özetler misin?"
+ "Bu metinde hangi konular var?"
+"En önemli bilgiler nelerdir?"
+ "Bu haber ne hakkında?"
+ "Önemli detaylar var mı?"
 ```
 
 ### **5️⃣ Sonuçları İnceleme**
 
-![Sonuçlar](screenshots/results.png)
+<img width="938" height="829" alt="results png" src="https://github.com/user-attachments/assets/3477039f-ac90-4a8e-8958-6cdf0261c5a6" />
 
 Tarama tamamlandıktan sonra:
 
